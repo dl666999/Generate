@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  background-color: black;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+label {
+  color: white;
+  font-size: 30px;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+a:link {
+  color: white;
+  font-size: 30px;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+a:hover {
+  color: red;
+  font-family: 'Brush Script MT', cursive;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: indigo;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 35px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+h2 {
+  
+  text-align: center;
+  color: indigo;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Brush Script MT', cursive;
+  
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Brush Script MT', cursive;
+  
+}
+
+ 
+p {
+  text-align: center;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Brush Script MT', cursive;
+  
+}
+
+label {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+div {
+  border-radius: 5px; 
+  background-color: black; 
+  padding: 5px; 
+}
+
+
+input {
+  text-align: center;
+  border-radius: 35px;
+}
+
+::placeholder {
+  font-size: 25px;
+  opacity: 0.3;
+  font-family: 'Brush Script MT';
+  color: black;
+}
+
+button:hover {
+  opacity: 0.8;
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+.cancelbtn:hover{
+  color: black;
+  background-color: red;
+  opacity: 0.8;
+
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */ 
+  background-color: rgb(0,0,0,0.4)); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid black;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.3s;
+  animation: animatezoom 0.3s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+.psw {
+  text-align: center;
+  color: white;
+ }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     color: white;
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+    text-align: center;
+     width: 100%;
+  }
+
+}
+</style>
+</head>
+<body>
+<br>
+<h2>Generate</h2>
+
+<h3>
+Generate an income from your entertainment...
+</h3>
+
+<h2>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</h2>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+	  <label>
+      <span class="psw"> <a href="file:///C:/Users/TC-165/Documents/Export/form.html">Create Account?</a></span>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:black">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
